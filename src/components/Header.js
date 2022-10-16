@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" style={{fontSize: "20px", fontWeight: "bold"}}>
       <Container>
         <Link to="/">
           <Navbar.Brand>Home</Navbar.Brand>
@@ -14,11 +14,11 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+          <Link to="/button-drop-down">
+              <NavItem className="mx-3">ButtonDropDown</NavItem>
+            </Link>
             <Link to="/input-drop-down">
               <NavItem className="mx-3">InputDropDown</NavItem>
-            </Link>
-            <Link to="/button-drop-down">
-              <NavItem className="mx-3">ButtonDropDown</NavItem>
             </Link>
             <Link to="/table-drop-down">
               <NavItem className="mx-3">TableDropDown</NavItem>

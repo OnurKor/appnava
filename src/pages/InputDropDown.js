@@ -14,6 +14,7 @@ const InputDropDown = () => {
         alignItems: "center",
         justifyContent: "center",
         marginTop: "30px",
+        marginBottom: "30px",
       }}
     >
       <div>
@@ -24,7 +25,7 @@ const InputDropDown = () => {
              label: item + "-" + item2
             };
           });
-          console.log(newMap)
+          // console.log(newMap)
           return (
             <div
               key={index}
@@ -33,14 +34,16 @@ const InputDropDown = () => {
                 gap: "30px",
                 padding: "7px",
                 backgroundColor: "#c8d9eb",
+                
               }}
             >
               <div
                 style={{
                   flex: "1",
-                  listStyleType: "none",
+                  // listStyleType: "none",
                   fontSize: "large",
                   fontWeight: "bold",
+                  textTransform:"capitalize",
                   // margin:"10px"
                   // padding:"10px"
                 }}

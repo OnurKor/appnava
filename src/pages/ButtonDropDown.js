@@ -4,16 +4,6 @@ import { MainEvents } from "../data/MainEvents";
 
 const ButtonDropDown = () => {
 
-  // const Main = MainEvents;
-  // console.log(Main);
-  // const NewSubEvents = [];
-
-  // const SubEvents = ["level", "total", "name", "avatar", "player"];
-  // MainEvents.map((x) => {
-  //   return x;
-  // });
-
-  // console.log(SubEvents);
   
 
   return (

@@ -24,10 +24,10 @@ const ButtonDropDownOpen = ({ button }) => {
       >
         <ul
         style={{
-        //   height: display,
+          // height: display,
           overflow: "hidden",
-          opacity: "1",
-          transition: "opacity 200ms",
+          // opacity: "1",
+          // transition: "opacity 200ms",
           margin:"0"
         }}
       >

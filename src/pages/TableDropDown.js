@@ -3,9 +3,7 @@ import TableRow from "../components/TableRow";
 import { MainEvents } from "../data/MainEvents";
 
 const TableDropDown = () => {
-  // const SubEvents = ["level", "total", "name", "avatar", "player"];
-  const [display, setDisplay] = useState(false);
-
+ 
   const SubEvents = ["", "level", "total", "name", "avatar", "player"];
   const NewSubEvents = [];
   let x = 6;
@@ -16,26 +14,31 @@ const TableDropDown = () => {
         NewSubEvents.push(MainEvents[i]);
       } else {
         NewSubEvents.push(MainEvents[i] + "_" + SubEvents[j]);
-      }
+      };
       x++;
-    }
-  }
+    };
+  };
   console.log(NewSubEvents);
   return (
-    <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-      <table className="table" style={{width: '250px', border:"1px solid black"}}>
-      <thead>
-        <tr>
-          <th>
-            Table Events
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-
-      {MainEvents.map((main, index) => <TableRow key={index} main={main} NewSubEvents={NewSubEvents}/>
-      )}
-      </tbody>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center"}}
+    >
+      <table
+        className="table table-primary"
+        style={{ width: "100%", maxWidth:"500px", border: "3px solid darkblue" }}
+      >
+        <thead>
+          <tr>
+            <th style={{ textAlign: "center", color: "chocolate" }}>
+             EVENTS TABLE 
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {MainEvents.map((main, index) => (
+            <TableRow key={index} main={main} NewSubEvents={NewSubEvents} />
+          ))}
+        </tbody>
       </table>
     </div>
   );
