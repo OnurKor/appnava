@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonDropDownOpen from "../components/ButtonDropDownOpen";
+import ButtonDropDownOpen from "../components/ListButtonOpen";
 import { MainEvents } from "../data/MainEvents";
 
 const ButtonDropDown = () => {

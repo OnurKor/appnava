@@ -21,15 +21,15 @@ const TableDropDown = () => {
   console.log(NewSubEvents);
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center"}}
+      style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop:"30px"}}
     >
       <table
-        className="table table-primary"
+        className="table table-primary "
         style={{ width: "100%", maxWidth:"500px", border: "3px solid darkblue" }}
       >
         <thead>
           <tr>
-            <th style={{ textAlign: "center", color: "chocolate" }}>
+            <th style={{ textAlign: "center", color: "#001f3f", fontSize: "25px",}}>
              EVENTS TABLE 
             </th>
           </tr>

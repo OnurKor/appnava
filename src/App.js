@@ -3,8 +3,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import InputDropDown from "./pages/InputDropDown";
-import ButtonDropDown from "./pages/ButtonDropDown";
-import TableDropDown from "./pages/TableDropDown";
+import ButtonDropDown from "./pages/ListButton";
+import TableDropDown from "./pages/TableButton";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
