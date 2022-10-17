@@ -12,7 +12,7 @@ const InputDropDown = () => {
         alignItems: "center",
         justifyContent: "center",
         marginTop: "30px",
-        marginBottom: "150px",
+        marginBottom: "76px",
       
       }}
     >
@@ -67,7 +67,7 @@ const InputDropDown = () => {
                     marginTop: 0,
                     margin: "auto",
                     textAlign: "left",
-                    width: "250px",
+                    width: "265px",
                     verticalAlign: "middle",
     
                   }),
